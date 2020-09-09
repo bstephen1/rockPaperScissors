@@ -49,47 +49,6 @@
 		updateScores(gameScores.getAttribute('pScore'),gameScores.getAttribute('cpuScore'));	
 	}
 		
-//for whatever reason, the addEventListener was NOT working
-//no matter what I tried...
-//actually, think they had to go in BEFORE appending, and
-//I had bad tags in the gameRound()
-/*
-	function showGameButtons() {
-		const body = document.body;
-		const div = document.createElement('div');
-		const btnR = document.createElement('button');
-		const btnP = document.createElement('button');
-		const btnS = document.createElement('button');
-		const roundText = document.createElement('p');
-		const gameScores = document.createElement('p');
-		const roundEndMsg = document.createElement('p');
-		const totalRounds = getChecked();
-		btnR.textContent = 'Rock';
-		btnP.textContent = 'Paper';
-		btnS.textContent = 'Scissors';
-		btnR.setAttribute('value', '2');
-		btnP.setAttribute('value', '1');
-		btnS.setAttribute('value', '0');
-		gameScores.classList.add('gameScores');
-		gameScores.setAttribute('pScore', 0);
-		gameScores.setAttribute('cpuScore', 0);
-		roundText.textContent = `Playing best of ${totalRounds}`;
-		roundEndMsg.classList.add('eorMsg');
-		btnR.onclick = console.log('test');
-		//btnR.addEventListener('click', gameRound(btnR.getAttribute('value')));	
-		//btnR.addEventListener('click', gameRound(2));
-		//btnP.addEventListener('click', gameRound(btnP.getAttribute('value')));	
-		//btnS.addEventListener('click', gameRound(btnS.getAttribute('value')));	
-		div.appendChild(btnR);
-		div.appendChild(btnP);
-		div.appendChild(btnS);
-		div.appendChild(roundText);
-		div.appendChild(gameScores);
-		div.appendChild(roundEndMsg);
-		body.appendChild(div);
-		updateScores(gameScores.getAttribute('pScore'),gameScores.getAttribute('cpuScore'));	
-	}	
-*/
 
 	function updateScores(s1,s2) {
 		gameScores.setAttribute('pScore', s1);
