@@ -1,0 +1,39 @@
+
+:root {
+	--main-bg-color: hsla(203, 97%, 59%, 1);
+	--gradient-bg-color: hsla(203, 97%, 19%, 1);
+}
+
+#rpsimg {
+	max-width: 50%;
+	height: auto;	
+}
+
+.container {
+	 border-radius: 10px;
+   display: flex;
+	 flex-direction: column;
+   justify-content: center;
+   align-items: center;
+	 text-align: center;
+	}
+
+
+#gameStart {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+button {
+	border-radius: 10px;
+	padding 5px;
+}
+
+button:hover {
+ background-color: hsla(188, 65%, 47%, 1);
+ box-shadow: 1px 1px 5px 6px #ccc;
+}
+
+body {
+  background: linear-gradient(90deg,  var(--gradient-bg-color) 0%,  var(--main-bg-color) 25%, var(--main-bg-color) 75%, var(--gradient-bg-color) 100%); 
+}

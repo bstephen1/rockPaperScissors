@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+  <meta charset="UTF-8"/>
+	<link rel='stylesheet' type='text/css' href='style.css'/>
+</head>
+<body>
+	<div class='container'>
+		<img id='rpsimg' src='https://www.artistshelpingchildren.org/crafts-images/travel-games/rock-paper-scissors.png'/>
+		<div class="initialSetup">
+			<p>Play best of:</p>
+			<input type="radio" id="1" name="numOfGames" class="numOfGames" value=1 />
+			<label for="1">1</label>
+			<input type="radio" id="3" name="numOfGames" class="numOfGames" value=3 checked='checked'/>
+			<label for="3">3</label>
+			<input type="radio" id="5" name="numOfGames" class="numOfGames" value=5 />
+			<label for="5">5</label>
+			<input type="radio" id="7" name="numOfGames" class="numOfGames" value=7 />
+			<label for="7">7</label>
+			<br>
+		</div>
+		<button id='gameStart'>Start game</button>
+		<div id=gameDiv>
+			<div id=duringGameDiv>
+				<button id='btnR' value='2'>Rock</button>
+				<button id='btnP'value='1'>Paper</button>
+				<button id='btnS' value='0'>Scissors</button>
+				<p id='roundText' totalRounds='0'></p>
+			</div>
+			<p id='gameScores' pScore='0' cpuScore='0'></p>
+			<p id='eorMsg'></p>
+		</div>
+	</div>
+
+	<script src='main.js'></script>
+</body>
+</html>
