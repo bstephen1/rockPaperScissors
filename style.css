@@ -4,6 +4,10 @@
 	--gradient-bg-color: hsla(203, 97%, 19%, 1);
 }
 
+html, body {
+    height: 100%;
+}
+
 #rpsimg {
 	max-width: 50%;
 	height: auto;	
